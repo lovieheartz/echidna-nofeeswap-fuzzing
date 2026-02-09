@@ -1,0 +1,10 @@
+corpusDir: './corpus/'
+testMode: assertion
+coverage: true
+solcArgs: "--evm-version cancun --optimize-runs 200 --via-ir"
+testLimit: 10000
+seqLen: 10
+shrinkLimit: 5000
+propMaxGas: 0xffffffffffffffff
+testMaxGas: 0xffffffffffffffff
+codeSize: 0x60000000

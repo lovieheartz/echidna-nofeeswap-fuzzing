@@ -1,0 +1,72 @@
+# ==========================================
+# INDUSTRY-GRADE ECHIDNA CONFIGURATION
+# ==========================================
+# This configuration is designed for production-level smart contract auditing
+
+# Corpus directory for saving interesting test cases and coverage data
+corpusDir: './corpus-industry/'
+
+# Test mode: assertion (use assert() statements to define properties)
+testMode: assertion
+
+# Enable comprehensive code coverage tracking
+coverage: true
+
+# Solidity compiler arguments
+# --via-ir: Use IR-based code generator for better optimization (prevents "stack too deep")
+# --optimize-runs 200: Standard optimization setting (balance between deployment cost and runtime)
+# --evm-version cancun: Latest EVM version with all features
+solcArgs: "--evm-version cancun --optimize-runs 200 --via-ir"
+
+# ==========================================
+# FUZZING PARAMETERS (INDUSTRY-GRADE)
+# ==========================================
+
+# Test limit: Number of test sequences to generate
+# Production audits typically use 1,000,000+ for thorough testing
+# Start with 50,000 for reasonable coverage in acceptable time
+testLimit: 50000
+
+# Sequence length: Number of transactions per test sequence
+# Longer sequences find more complex bugs but take more time
+seqLen: 20
+
+# Shrinking limit: Attempts to minimize failing test cases
+# Higher values produce cleaner bug reports
+shrinkLimit: 10000
+
+# ==========================================
+# GAS AND RESOURCE LIMITS
+# ==========================================
+
+# Maximum gas for property tests (unlimited)
+propMaxGas: 0xffffffffffffffff
+
+# Maximum gas for test transactions (unlimited)
+testMaxGas: 0xffffffffffffffff
+
+# Maximum code size (very large to avoid artificial limits)
+codeSize: 0x60000000
+
+# ==========================================
+# ADVANCED OPTIONS
+# ==========================================
+
+# Number of parallel workers (use multiple cores)
+# Adjust based on your CPU (typically 4-8 for modern machines)
+workers: 4
+
+# Seed for reproducibility (comment out for random seed)
+# seed: 42
+
+# Stop on first failure (useful for debugging)
+stopOnFail: false
+
+# ==========================================
+# DICTIONARY (OPTIONAL)
+# ==========================================
+# Add interesting values that Echidna should try
+# Uncomment and customize as needed
+
+# constantsPrefix: "const_"
+# solConf: "solc.json"

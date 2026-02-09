@@ -1,0 +1,38 @@
+# Echidna Fuzzing Tests - Git Ignore
+
+# Claude Code directory (AI assistant files)
+.claude/
+.claude/*
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Logs (keep test logs)
+*.log
+!echidna_industry_run.log
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+
+# Slither cache
+crytic-export/
+
+# Build artifacts
+build/
+out/
+cache/
+
+# Environment files
+.env
+.env.local

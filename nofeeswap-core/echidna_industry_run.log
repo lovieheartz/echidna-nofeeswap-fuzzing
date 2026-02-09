@@ -1,0 +1,127 @@
+[2026-02-07 01:29:01.39] Compiling `echidna/PriceTestIndustryGrade.sol`... WARNING: slither not found. Echidna uses Slither (https://github.com/crytic/slither) to perform source analysis, which makes fuzzing more effective. You should install it with 'pip3 install slither-analyzer --user'
+Done! (1.6106627s)
+Analyzing contract: R:/LIAT.AI/nofeeswap-core/echidna/PriceTestIndustryGrade.sol:PriceTestIndustryGrade
+Loaded 0 transaction sequences from ./corpus-industry\reproducers
+Loaded 0 transaction sequences from ./corpus-industry\coverage
+[2026-02-07 01:29:03.19] [Worker 2] Test test_property_copy_preserves_data(int256,int256,int256) falsified!
+  Call sequence:
+/LIAT.AI/nofeeswap-core/echidna/PriceTestIndustryGrade.sol.test_property_read_idempotence(4370000,17258352934384977843910473012636219026987870790635023147114144282920082055415,10784034472643280955420854835323210434958108995413620646972446877515430790973) from: 0x0000000000000000000000000000000000010000 Time delay: 112444 seconds Block delay: 49415
+/LIAT.AI/nofeeswap-core/echidna/PriceTestIndustryGrade.sol.test_property_copy_preserves_data(4370000,11559929453984146064977627452055328693759696470539676585797128396232130742800,57896044618658097711785492504343953926634992332820282019728792003956564819827) from: 0x0000000000000000000000000000000000020000 Time delay: 224134 seconds Block delay: 60267
+/LIAT.AI/nofeeswap-core/echidna/PriceTestIndustryGrade.sol.test_property_store_retrieve_with_height(65535,14566058818559185239098594016272756650685794332213085309363930367762895646527,4369999,57896044618658097711785492504343953926634992332820282019728792003956564819740) from: 0x0000000000000000000000000000000000030000 Time delay: 4177 seconds Block delay: 32374
+/LIAT.AI/nofeeswap-core/echidna/PriceTestIndustryGrade.sol.test_property_random_pointer_memory_safety(115792089237316195423570985008687907853269984665640564039457584007913129639934,57744311232756966277815636465519477225735634815868554586900318080901635800102,30691909540744664239583254671511083078597527132660366102605025097257407335993,57896044618658097711785492504343953926634992332820282019728792003956564819967) from: 0x0000000000000000000000000000000000030000 Time delay: 112444 seconds Block delay: 30304
+/LIAT.AI/nofeeswap-core/echidna/PriceTestIndustryGrade.sol.totalGasConsumed() from: 0x0000000000000000000000000000000000020000 Time delay: 482712 seconds Block delay: 9920
+/LIAT.AI/nofeeswap-core/echidna/PriceTestIndustryGrade.sol.test_property_store_retrieve_correctness(55793978607091147575794343539086444562044056988724218075325916693335879746908,11493587832356533420745175545076961358398495054277834863834034114029056447456,729) from: 0x0000000000000000000000000000000000020000 Time delay: 463587 seconds Block delay: 18429
+/LIAT.AI/nofeeswap-core/echidna/PriceTestIndustryGrade.sol.test_property_copy_preserves_data(1524785993,15884774052471717705891937398883123604095319821155455864566779337486817445940,4370001) from: 0x0000000000000000000000000000000000030000 Time delay: 332369 seconds Block delay: 15368
+
+[2026-02-07 01:29:03.19] [Worker 0] New coverage: 3007 instr, 1 contracts, 1 seqs in corpus
+[2026-02-07 01:29:03.20]  Saved reproducer to ./corpus-industry\reproducers-unshrunk\8253727430525587677.txt
+[2026-02-07 01:29:03.20] [Worker 1] New coverage: 3237 instr, 1 contracts, 2 seqs in corpus
+[2026-02-07 01:29:03.20] [Worker 2] New coverage: 3237 instr, 1 contracts, 3 seqs in corpus
+[2026-02-07 01:29:03.20]  Saved reproducer to ./corpus-industry\coverage\4758325158740513233.txt
+[2026-02-07 01:29:03.21] [Worker 3] New coverage: 3682 instr, 1 contracts, 4 seqs in corpus
+[2026-02-07 01:29:03.21] [Worker 0] New coverage: 3821 instr, 1 contracts, 5 seqs in corpus
+[2026-02-07 01:29:03.21]  Saved reproducer to ./corpus-industry\coverage\4021255006124778853.txt
+[2026-02-07 01:29:03.22]  Saved reproducer to ./corpus-industry\coverage\7509260241780584936.txt
+[2026-02-07 01:29:03.22]  Saved reproducer to ./corpus-industry\coverage\2707370459884748301.txt
+[2026-02-07 01:29:03.22] [Worker 0] Test test_property_random_pointer_memory_safety(uint256,int256,int256,int256) falsified!
+  Call sequence:
+/LIAT.AI/nofeeswap-core/echidna/PriceTestIndustryGrade.sol.test_property_random_pointer_memory_safety(31402,605,1524785991,8243871290890070050747429895559065401282954085737252831855502456551186093063) Time delay: 447588 seconds Block delay: 5053
+
+[2026-02-07 01:29:03.23]  Saved reproducer to ./corpus-industry\coverage\7685548197854324509.txt
+[2026-02-07 01:29:03.23]  Saved reproducer to ./corpus-industry\reproducers-unshrunk\2389243325199972474.txt
+[2026-02-07 01:29:03.24] [Worker 1] New coverage: 3837 instr, 1 contracts, 6 seqs in corpus
+[2026-02-07 01:29:03.24]  Saved reproducer to ./corpus-industry\coverage\318463981807434645.txt
+[2026-02-07 01:29:03.24] [Worker 0] New coverage: 3837 instr, 1 contracts, 7 seqs in corpus
+[2026-02-07 01:29:03.25]  Saved reproducer to ./corpus-industry\coverage\3356890322373078714.txt
+[2026-02-07 01:29:03.29] [Worker 3] New coverage: 3837 instr, 1 contracts, 8 seqs in corpus
+[2026-02-07 01:29:03.30]  Saved reproducer to ./corpus-industry\coverage\4036843951714033680.txt
+[2026-02-07 01:29:03.31] [Worker 3] Test test_property_store_retrieve_with_height(uint16,int256,int256,int256) falsified!
+  Call sequence:
+/LIAT.AI/nofeeswap-core/echidna/PriceTestIndustryGrade.sol.test_property_random_pointer_memory_safety(31402,605,1524785991,8243871290890070050747429895559065401282954085737252831855502456551186093063) from: 0x0000000000000000000000000000000000030000 Time delay: 447588 seconds Block delay: 5053
+/LIAT.AI/nofeeswap-core/echidna/PriceTestIndustryGrade.sol.totalGasConsumed() from: 0x0000000000000000000000000000000000020000 Time delay: 404997 seconds Block delay: 7323
+/LIAT.AI/nofeeswap-core/echidna/PriceTestIndustryGrade.sol.test_property_random_pointer_memory_safety(31402,1524785991,1524785991,57896044618658097711785492504343953926634992332820282019728792003956564819967) from: 0x0000000000000000000000000000000000020000 Time delay: 49735 seconds Block delay: 6234
+/LIAT.AI/nofeeswap-core/echidna/PriceTestIndustryGrade.sol.totalGasConsumed() from: 0x0000000000000000000000000000000000020000 Time delay: 220830 seconds Block delay: 32737
+/LIAT.AI/nofeeswap-core/echidna/PriceTestIndustryGrade.sol.test_property_read_idempotence(40045849480493019606075512728242779149404696060750317799358411833078867992065,37209672113559813973727706158897688497619000395766366289088202021544016687368,16154190309546811335136135494303307845241677000762365523481923527758662683722) from: 0x0000000000000000000000000000000000030000 Time delay: 6474 seconds Block delay: 60364
+/LIAT.AI/nofeeswap-core/echidna/PriceTestIndustryGrade.sol.test_property_store_retrieve_with_height(44057,57896044618658097711785492504343953926634992332820282019728792003956564818956,26602772110693104013451693158073711227431952723757187027416738870473065836107,9839223544942029627456628920815001441516527656438642892510219900722468652074) from: 0x0000000000000000000000000000000000010000
+/LIAT.AI/nofeeswap-core/echidna/PriceTestIndustryGrade.sol.testsExecuted() from: 0x0000000000000000000000000000000000020000 Time delay: 517902 seconds Block delay: 5054
+/LIAT.AI/nofeeswap-core/echidna/PriceTestIndustryGrade.sol.test_property_random_pointer_memory_safety(51574734723117313939079065653366403984849248709669674862230429535098801813795,43672050317805796748264288398857276429653727672496236300758938673097095730473,4370001,3184056415386887225175743333966053482034260635389089269964774228323714565898) from: 0x0000000000000000000000000000000000030000 Time delay: 209930 seconds Block delay: 23722
+/LIAT.AI/nofeeswap-core/echidna/PriceTestIndustryGrade.sol.test_property_store_retrieve_correctness(4370000,4370000,35071093424434356714724591507516723860662020258430367011337756149656984571022) from: 0x0000000000000000000000000000000000020000 Time delay: 338920 seconds Block delay: 15369
+/LIAT.AI/nofeeswap-core/echidna/PriceTestIndustryGrade.sol.totalGasConsumed() from: 0x0000000000000000000000000000000000030000 Time delay: 303345 seconds Block delay: 33357
+/LIAT.AI/nofeeswap-core/echidna/PriceTestIndustryGrade.sol.test_property_read_idempotence(3672959930739819889033256234731425698317163227142298133661410157940460663028,54882185311317322672427131954067682750114198753373561050736954367348143262712,57896044618658097711785492504343953926634992332820282019728792003956564819967) from: 0x0000000000000000000000000000000000020000 Time delay: 554465 seconds Block delay: 9966
+/LIAT.AI/nofeeswap-core/echidna/PriceTestIndustryGrade.sol.testsExecuted() from: 0x0000000000000000000000000000000000010000 Time delay: 448552 seconds Block delay: 35248
+/LIAT.AI/nofeeswap-core/echidna/PriceTestIndustryGrade.sol.test_property_store_retrieve_with_height(65535,57896044618658097711785492504343953926634992332820282019728792003956564819528,16111742778458015651169089741811218040887284068784588039700236613841596173876,20843895774817262017728492358064981784807420558586147790431335283431192259340) from: 0x0000000000000000000000000000000000020000 Time delay: 405856 seconds Block delay: 22699
+/LIAT.AI/nofeeswap-core/echidna/PriceTestIndustryGrade.sol.test_property_store_retrieve_with_height(65535,57896044618658097711785492504343953926634992332820282019728792003956564819967,57615331973079605492607720563617224828342286630183831201737343146083594393710,4370000) from: 0x0000000000000000000000000000000000020000 Time delay: 82671 seconds Block delay: 30011
+/LIAT.AI/nofeeswap-core/echidna/PriceTestIndustryGrade.sol.totalGasConsumed() from: 0x0000000000000000000000000000000000010000 Time delay: 45142 seconds Block delay: 23403
+/LIAT.AI/nofeeswap-core/echidna/PriceTestIndustryGrade.sol.test_property_copy_preserves_data(4369999,37978518348167371890732097324883009837677774004908280249147477282690063312151,1524785993) from: 0x0000000000000000000000000000000000010000 Time delay: 455670 seconds Block delay: 45819
+/LIAT.AI/nofeeswap-core/echidna/PriceTestIndustryGrade.sol.test_property_read_idempotence(19588956080804297440356310563187536016520199310620459087914000534897096184703,16837876285855164819426697731701358627779918016584190472429928385225290549895,23308888144732268149137706538834623315157604983947344026468490058310719602659) from: 0x0000000000000000000000000000000000020000 Time delay: 490446 seconds Block delay: 6869
+/LIAT.AI/nofeeswap-core/echidna/PriceTestIndustryGrade.sol.test_property_store_retrieve_correctness(32464937611950903409599222462976932076209644729670578910523149139776595894053,11861616773839812084249556312526901845804284960128699848252027459610996162485,43656432603249167706831402694583295565711237633022122260031304384884112786466) from: 0x0000000000000000000000000000000000010000 Time delay: 111322 seconds Block delay: 1
+/LIAT.AI/nofeeswap-core/echidna/PriceTestIndustryGrade.sol.test_property_store_retrieve_with_height(37963,4370001,5457112902588899193153099521916905915967819492798858786943452838522111742948,9026479435541348785423588466889270625770708619679022703313723000289183923407) from: 0x0000000000000000000000000000000000030000 Time delay: 275394 seconds Block delay: 1787
+
+[2026-02-07 01:29:03.31] [Worker 3] New coverage: 4201 instr, 1 contracts, 9 seqs in corpus
+[2026-02-07 01:29:03.31]  Saved reproducer to ./corpus-industry\reproducers-unshrunk\8227580449848187360.txt
+[2026-02-07 01:29:03.32]  Saved reproducer to ./corpus-industry\coverage\3545873432737686888.txt
+[2026-02-07 01:29:03.37] [Worker 1] New coverage: 4231 instr, 1 contracts, 10 seqs in corpus
+[2026-02-07 01:29:03.37]  Saved reproducer to ./corpus-industry\coverage\2747578588107210108.txt
+[2026-02-07 01:29:03.37] [Worker 1] New coverage: 4237 instr, 1 contracts, 11 seqs in corpus
+[2026-02-07 01:29:03.38]  Saved reproducer to ./corpus-industry\coverage\6506162760497292078.txt
+[2026-02-07 01:29:03.49] [Worker 1] Test test_property_store_retrieve_correctness(int256,int256,int256) falsified!
+  Call sequence:
+/LIAT.AI/nofeeswap-core/echidna/PriceTestIndustryGrade.sol.test_property_store_retrieve_with_height(57272,4369999,1524785993,36733125919833967733744128776354427893478752477836540037896300539773153404338) from: 0x0000000000000000000000000000000000020000 Time delay: 525476 seconds Block delay: 54350
+/LIAT.AI/nofeeswap-core/echidna/PriceTestIndustryGrade.sol.test_property_store_retrieve_correctness(4370000,188147299022545868001495332281437326862946280389674881541172770720869765241,4370000) from: 0x0000000000000000000000000000000000030000 Time delay: 114790 seconds Block delay: 7390
+
+[2026-02-07 01:29:03.49]  Saved reproducer to ./corpus-industry\reproducers-unshrunk\1829856344627254165.txt
+[2026-02-07 01:29:06.20] [status] tests: 4/9, fuzzing: 635/5000, values: [], cov: 4237, corpus: 11, shrinking: W0:3072/10000(1) W3:5572/10000(1) W2:7296/10000(1) W1:6403/10000(1), gas/s: 6443950
+[2026-02-07 01:29:07.35] [Worker 2] New coverage: 4265 instr, 1 contracts, 12 seqs in corpus
+[2026-02-07 01:29:07.36]  Saved reproducer to ./corpus-industry\coverage\8332876095759691716.txt
+[2026-02-07 01:29:07.46] [Worker 2] New coverage: 4301 instr, 1 contracts, 13 seqs in corpus
+[2026-02-07 01:29:07.47]  Saved reproducer to ./corpus-industry\coverage\5419921371649456895.txt
+[2026-02-07 01:29:07.50] [Worker 2] New coverage: 4660 instr, 1 contracts, 14 seqs in corpus
+[2026-02-07 01:29:07.51]  Saved reproducer to ./corpus-industry\coverage\6653419653695924669.txt
+[2026-02-07 01:29:07.59] [Worker 2] New coverage: 4667 instr, 1 contracts, 15 seqs in corpus
+[2026-02-07 01:29:07.59]  Saved reproducer to ./corpus-industry\coverage\3921651245811430216.txt
+[2026-02-07 01:29:07.87] [Worker 2] Test limit reached. Stopping.
+[2026-02-07 01:29:07.96] [Worker 1] Test limit reached. Stopping.
+[2026-02-07 01:29:08.48] [Worker 3] Test limit reached. Stopping.
+[2026-02-07 01:29:09.20] [status] tests: 4/9, fuzzing: 3827/5000, values: [], cov: 4667, corpus: 15, shrinking: W0:6850/10000(1), gas/s: 32575064
+[2026-02-07 01:29:11.47] [Worker 0] Test limit reached. Stopping.
+[2026-02-07 01:29:11.47] [status] tests: 4/9, fuzzing: 5028/5000, values: [], cov: 4667, corpus: 15, gas/s: 17838706
+testsExecuted(): passing
+test_property_read_idempotence(int256,int256,int256): passing
+test_property_random_pointer_memory_safety(uint256,int256,int256,int256): failed!💥  
+  Call sequence:
+    /LIAT.AI/nofeeswap-core/echidna/PriceTestIndustryGrade.sol.test_property_random_pointer_memory_safety(0,1,0,105321728752546928095990813588036654167103873528271871525968153947)
+
+Traces: 
+
+test_property_store_retrieve_with_height(uint16,int256,int256,int256): failed!💥  
+  Call sequence:
+    /LIAT.AI/nofeeswap-core/echidna/PriceTestIndustryGrade.sol.test_property_store_retrieve_with_height(0,1,0,105466540481730327412651962812198308204762648429101461520665946081)
+
+Traces: 
+
+totalGasConsumed(): passing
+maxGasObserved(): passing
+test_property_copy_preserves_data(int256,int256,int256): failed!💥  
+  Call sequence:
+    /LIAT.AI/nofeeswap-core/echidna/PriceTestIndustryGrade.sol.test_property_copy_preserves_data(1,105548931177941278043069335249791504250463836838241816186813996434,0)
+
+Traces: 
+
+test_property_store_retrieve_correctness(int256,int256,int256): failed!💥  
+  Call sequence:
+    /LIAT.AI/nofeeswap-core/echidna/PriceTestIndustryGrade.sol.test_property_store_retrieve_correctness(1,106042693688286888749844332309173760875888815757289183140478978951,0)
+
+Traces: 
+
+AssertionFailed(..): passing
+
+Unique instructions: 4667
+Unique codehashes: 1
+Corpus size: 15
+Seed: 6968496857644329776
+Total calls: 5028
+
+[2026-02-07 01:29:11.47] Saving test reproducers... Done! (0.0022153s)
+[2026-02-07 01:29:11.48] Saving corpus... Done! (0.0024435s)
+[2026-02-07 01:29:11.48] Saving foundry reproducers... Done! (0.0022648s)
+[2026-02-07 01:29:11.48] Saving coverage... Done! (0.1454755s)
