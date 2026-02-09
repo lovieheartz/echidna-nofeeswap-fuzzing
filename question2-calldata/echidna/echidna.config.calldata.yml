@@ -1,0 +1,81 @@
+# Echidna Configuration for Calldata readModifyPositionInput Tests
+# Question 2: Property-based testing with arbitrary non-strictly encoded input
+
+# Test mode: assertion-based testing
+testMode: assertion
+
+# Number of test sequences to run
+testLimit: 50000
+
+# Length of each test sequence (number of transactions)
+seqLen: 20
+
+# Shrinking configuration for minimizing failing test cases
+shrinkLimit: 10000
+
+# Number of parallel workers
+workers: 4
+
+# Coverage tracking
+coverage: true
+
+# Corpus directory for storing interesting test cases
+corpusDir: "./corpus-calldata"
+
+# Gas limits (set to max for thorough testing)
+txGasLimit: 0xffffffffffffffff
+blockGasLimit: 0xffffffffffffffff
+
+# Allow FFI calls (needed for complex contract interactions)
+allowFFI: false
+
+# Solidity compiler settings
+solcArgs: "--via-ir --optimize --optimize-runs 200 --allow-paths .,.."
+
+# EVM version
+codeSize: 0x6000
+evmVersion: "cancun"
+
+# Timestamp and block configuration
+timestamp: 1704067200  # 2024-01-01 00:00:00 UTC
+blockNumber: 18000000
+
+# Prefix for test functions
+testPrefix: "test_property_"
+
+# Quiet mode (reduce output verbosity)
+quiet: false
+
+# Seed for reproducibility (comment out for random seed)
+# seed: 42
+
+# Maximum value for uint256 generation
+maxValue: 115792089237316195423570985008687907853269984665640564039457584007913129639935
+
+# Dictionary of interesting values for fuzzing
+constants:
+  - 0x0
+  - 0x1
+  - 0xFFFFFFFFFFFFFFFF                                      # uint64 max
+  - 0x7FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF                    # int128 max
+  - 0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF                    # uint128 max
+  - 0xFFFF                                                  # uint16 max (hookDataByteCount limit)
+  - 576460752303423488                                      # 2^59 (ONE_X59)
+  - 9223372036854775808                                     # 2^63 (ONE_X63)
+  - 18446744073709551616                                    # THIRTY_TWO_X59
+  - 0xDEADBEEFDEADBEEFDEADBEEFDEADBEEFDEADBEEFDEADBEEFDEADBEEFDEADBEEF
+  - 0xF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00F
+  - 0xCAFEBABECAFEBABECAFEBABECAFEBABECAFEBABECAFEBABECAFEBABECAFEBABE
+
+# Property test specific configuration
+# We want to maximize exploration of:
+# 1. Random hookdata offsets (randomGap parameter)
+# 2. Random content starting positions (randomContentStart parameter)
+# 3. Various poolId values with different qOffsets
+# 4. Edge cases for qMin, qMax, shares, hookDataByteCount
+
+# Output format
+format: text
+
+# Enable experimental features
+experimental: false

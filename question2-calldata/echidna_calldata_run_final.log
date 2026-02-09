@@ -1,0 +1,12 @@
+Warning: unused option: blockGasLimit
+Warning: unused option: blockNumber
+Warning: unused option: constants
+Warning: unused option: evmVersion
+Warning: unused option: experimental
+Warning: unused option: filterInvariant
+Warning: unused option: filterTest
+Warning: unused option: timestamp
+Warning: unused option: txGasLimit
+[2026-02-09 12:35:45.40] Compiling `echidna/CalldataTestIndustryGrade.sol`... Done! (8.7686179s)
+Analyzing contract: R:/LIAT.AI/question2-calldata/echidna/CalldataTestIndustryGrade.sol:CalldataTestIndustryGrade
+echidna.exe: Test "test_property_invalid_logprices_revert" has arguments, aborting
